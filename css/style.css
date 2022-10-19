@@ -2,5 +2,52 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+main {
+    margin-bottom: 100px;
+}
+.container-main {
+    display: flex;
+}
+#col-left {
+    width: 300px;
+    background-color: black;
+    height: calc(100% - 100px);
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
+#main-part {
+    width: calc(100% - 300px);
+    background-color: #141922;
+    height: 100vh;
+    margin-left: 300px;
+}
+.container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.up {
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+}
+.down {
+    width: 300px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.container-tools {
+    background-color: #282828;
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
