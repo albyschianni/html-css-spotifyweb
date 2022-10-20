@@ -24,7 +24,7 @@ main {
 #main-part {
     width: calc(100% - 250px);
     background-color: #141922;
-    height: 100vh;
+    height: calc(100% - 100px);
     margin-left: 250px;
 }
 
@@ -165,43 +165,85 @@ main {
     justify-content: flex-end;
 }
 #section-upgrade {
-    width: 50px;
-    height: 50px;
-    background-color: antiquewhite;
+    width: 250px;
+    height: 100px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
 }
-#text-install {
-
+#tag-upgrade {
+    text-decoration: none;
+    color: white;
+    border: solid 1.5px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-left: 20px;
 }
 
 /* SCROLLING SECTION */
 
 #generi {
-    width: 100%;
-    height: 50px;
-    background-color: bisque;
-    margin-top: 100px;
+    width: 60%;
+    min-height: 40px;
+    /* background-color: bisque; */
+    margin: 100px auto 0px;
 }
 .container-recently {
     display: flex;
-    width: 100%;
+    width:calc(100% - 40px);
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     min-height: 200px;
-    background-color: rgb(29, 6, 121);
+    /* background-color: rgb(29, 6, 121); */
+    justify-content: space-between;
 }
-.container-perte {
+.card-music-recently {
+    width: calc((100% / 6) - 15px);
+    background-color: antiquewhite;
+}
+.container-perte, .container-popular {
     display: flex;
-    width: 100%;
+    margin: 0 auto;
+    width:calc(100% - 40px);
     min-height: 200px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
-.container-popular {
+.card-music-perte, .card-music-popular {
+    width: calc((100% / 6) - 15px);
+    background-color: beige;
+    margin-right: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+
+.nav-main {
+    list-style: none;
+}
+.container-nav {
     display: flex;
-    width: 100%;
-    min-height: 200px;
-    background-color: rgb(162, 246, 36);
+    justify-content: space-between;
+    font-size: 14px;
+    height: 40px;
+    align-items: center;
+    color: #7d7f84;
+    font-weight: bold;
 }
-
-
-
+h2 {
+    color: white;
+    margin-left: 20px;
+}
+.sub {
+    color: #7d7f84;
+    font-size: 13px;
+    margin-left: 20px;
+}
+#small-h2 {
+    color: white;
+    font-size: 20px;
+}
 
 .container-tools {
     background-color: #282828;
