@@ -205,7 +205,7 @@ main {
 }
 .container-img-album {
     width: 100%;
-    height: 70%;
+    /* height: 70%; */
     margin-bottom: 10px;
 }
 .img-album {
@@ -253,6 +253,7 @@ main {
     align-items: center;
     color: #7d7f84;
     font-weight: bold;
+    flex-wrap: wrap;
 }
 h2 {
     color: white;
@@ -269,6 +270,9 @@ h2 {
     font-size: 20px;
 }
 
+
+/* SECTION TOOLS */
+
 .container-tools {
     background-color: #282828;
     height: 100px;
@@ -277,4 +281,33 @@ h2 {
     width: 100%;
     bottom: 0;
     left: 0;
+    display: flex;
+   
+}
+.left-tools {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#current-song {
+    height: 50%;
+}
+#img-current {
+    width: 50px;
+}
+#info-brano {
+    display: flex;
+    flex-direction: column;
+}
+.fa-heart, .fa-folder, .fa-bars, .fa-display, .fa-volume-high {
+    color: white;
+}
+.middle-tools {
+    width: 50%;
+}
+.right-tools {
+    width: 25%;
+    display: flex;
+    align-items: center;
 }
