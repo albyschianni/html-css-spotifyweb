@@ -194,14 +194,36 @@ main {
     width:calc(100% - 40px);
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: 10px;
     min-height: 200px;
     /* background-color: rgb(29, 6, 121); */
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .card-music-recently {
     width: calc((100% / 6) - 15px);
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+}
+.container-img-album {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+.img-album {
+    width: 100%;
+}
+.name-song, .name-song2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.container-img-album2 {
+    margin-bottom: 34px;
+}
+.sub-song {
+    color: #7d7f84;
+    font-size: 13px;
+    text-align: center;
 }
 .container-perte, .container-popular {
     display: flex;
@@ -212,13 +234,14 @@ main {
 }
 .card-music-perte, .card-music-popular {
     width: calc((100% / 6) - 15px);
-    background-color: beige;
+    /* background-color: beige; */
     margin-right: 17px;
     margin-top: 10px;
     margin-bottom: 10px;
-   
 }
-
+.round {
+    border-radius: 50%;
+}
 .nav-main {
     list-style: none;
 }
@@ -239,6 +262,7 @@ h2 {
     color: #7d7f84;
     font-size: 13px;
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 #small-h2 {
     color: white;
