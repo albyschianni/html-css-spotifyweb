@@ -13,7 +13,7 @@ main {
 }
 
 #col-left {
-    width: 300px;
+    width: 250px;
     background-color: black;
     height: calc(100% - 100px);
     position: fixed;
@@ -22,10 +22,10 @@ main {
 }
 
 #main-part {
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     background-color: #141922;
     height: 100vh;
-    margin-left: 300px;
+    margin-left: 250px;
 }
 
 /* SECTION LEFT SPOTIFY BAR */
@@ -37,26 +37,130 @@ main {
     height: 100%;
 }
 .up {
-    width: 300px;
-    height: 200px;
-    background-color: aqua;
+    width: 250px;
+    min-height: 200px;
+    /* background-color: aqua; */
 }
 .down {
-    width: 300px;
+    width: 250px;
     height: 200px;
-    background-color: blueviolet;
+    display: flex;
+    
+    /* background-color: blueviolet; */
+}
+#logo-structure {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+#logo {
+    width: 165px;
+    padding-bottom: 10px;
+}
+#text-logo {
+    text-decoration: none;
+    
+}
+.icon-structure {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.icon {
+    filter: invert(0.8);
+    width: 30px;
+}
+.text-icon {
+    color: #717171;
+    text-decoration: none;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 15px;    
+}
+.space-playlist {
+    margin-bottom: 10px;
+}
+#playlist {
+    color: white;
+    font-weight: bold;
+    padding-left: 14px;
+}
+#create-playlist {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+}
+#plus {
+    background-color: #a3a3a3;
+    padding: 10px 12px;
+}
+.nome-playlist {
+    color: #717171;
+    list-style: none;
+    font-size: 14px; 
+    padding-left: 14px;
+    line-height: 24px;
+}
+#down-align {
+    align-self: flex-end;
+    width: 100%;
 }
 
+#install {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    /* border-bottom: solid 1px #717171; */
+}
+#install-img {
+    filter: invert(0.8);
+    width: 15px;
+}
+#text-install {
+    color: #717171;
+    text-decoration: none;
+    padding-left: 5px;
+    font-size: 12px;
+}
+#text-profile {
+    color: white;
+    text-decoration: none;
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#lign {
+    color: #717171;
+    width: 100%;
+}
+#lign-mesure {
+    padding: 0px 14px;
+    margin-bottom: 10px;
+}
+#profile-img {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+#background-profile {
+    background-color: #717171;
+    width: 25px;
+    height: 25px;
+    padding-left: 3px;
+    border-radius: 50%;
+}
 /* TRASPARENCY SECTION UPGRADE */
 
 #upgrade {
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     height: 100px;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.3;
     position: fixed;
     top: 0;
-    left: 300px;
+    left: 250px;
     display: flex;
     justify-content: flex-end;
 }
@@ -64,6 +168,9 @@ main {
     width: 50px;
     height: 50px;
     background-color: antiquewhite;
+}
+#text-install {
+
 }
 
 /* SCROLLING SECTION */
