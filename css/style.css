@@ -13,6 +13,7 @@ main {
 }
 
 #col-left {
+    display:block;
     width: 250px;
     background-color: black;
     height: calc(100% - 100px);
@@ -20,7 +21,35 @@ main {
     top: 0;
     left: 0;
 }
-
+.col-left-alt {
+    display: none;
+    width: 50px;
+    background-color: black;
+    height: calc(100% - 100px);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#logo-alt {
+   width: 30px;
+}
+#home-alt {
+    width: 30px;
+}
+#cerca-alt {
+    width: 30px;
+}
+#libreria-alt {
+    width: 30px;
+}
+#download-alt {
+    width: 15px;
+}
+.container-download-alt {
+    width: 50px;
+    display: flex;
+justify-content: center;
+}
 #main-part {
     width: calc(100% - 250px);
     background-color: #141922;
@@ -36,6 +65,12 @@ main {
     justify-content: space-between;
     height: 100%;
 }
+.container-left-alt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 .up {
     width: 250px;
     min-height: 200px;
@@ -45,8 +80,19 @@ main {
     width: 250px;
     height: 200px;
     display: flex;
-    
     /* background-color: blueviolet; */
+}
+.up-alt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+.down-alt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 #logo-structure {
     display: flex;
@@ -191,16 +237,18 @@ main {
 }
 .container-recently {
     display: flex;
-    width:calc(100% - 40px);
-    margin: 0 auto;
-    margin-top: 10px;
+    width:calc(100% - 25px);
+    /* margin: 0 auto;
+    margin-top: 10px; */
     min-height: 200px;
-    /* background-color: rgb(29, 6, 121); */
-    justify-content: space-between;
-    margin-bottom: 20px;
+    /* justify-content: space-between; */
+    /* margin-bottom: 20px; */
+    margin: 20px 5px 20px 20px;
+    flex-wrap: wrap;
 }
 .card-music-recently {
     width: calc((100% / 6) - 15px);
+    margin-right: 15px;
     /* background-color: antiquewhite; */
 }
 .container-img-album {
@@ -270,6 +318,59 @@ h2 {
     font-size: 20px;
 }
 
+/*********** Tablet version step 1 ***********/
+
+
+@media screen and (max-width:1100px) {
+    .card-music-recently {
+        width: calc((100% / 4) - 15px);
+    }
+    .card-music-perte {
+        width: calc((100% / 4) - 15px);
+    }
+    .card-music-popular {
+        width: calc((100% / 4) - 15px);
+    }
+    .sub-song {
+        margin-bottom: 10px;
+    }
+}
+
+/*********** Tablet version step 2 ***********/
+
+@media screen and (max-width:730px) {
+    .card-music-recently {
+        width: calc((100% / 2) - 15px);
+    }
+    .card-music-perte {
+        width: calc((100% / 2) - 15px);
+    }
+    .card-music-popular {
+        width: calc((100% / 2) - 15px);
+    }
+    .container-nav {
+        margin-bottom: 25px;
+    }
+}
+
+/*********** Mobile version ***********/
+
+@media screen and (max-width:530px) {
+    #col-left {
+        display: none;
+    }
+    .col-left-alt {
+        display: block;
+    }
+    #main-part {
+        width: calc(100% - 50px);
+        margin-left: 50px;
+    }
+    #upgrade {
+        width: calc(100% - 50px);
+        left: 50px;
+    }
+}
 
 /* SECTION TOOLS */
 
@@ -338,7 +439,8 @@ h2 {
 
 .fa-shuffle, .fa-backward-step, .fa-circle-play, .fa-forward-step, .fa-rotate-right {
     color: white;
-    margin-right: 10px;
+    margin-right: 17px;
+    font-size: 20px;
 }
 .song-time {
     font-size: 12px;
